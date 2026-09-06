@@ -3,30 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio Website</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Mekala Tharun Kuruma | Software Engineer</title>
+    <link rel="stylesheet" href="style.css?v=20260906">
     <script src="https://kit.fontawesome.com/800bd4bac7.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <div id="header">
     <div class="container">
         <nav>
-            <img src="icons8-code-48.png" class="logo">
+            <img src="icons8-code-48.png" class="logo" alt="Mekala Tharun Kuruma logo">
             <ul id="sidemenu">
                 <li><a href="#header">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#services">Skills</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#about">Experience</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <i class="fas fa-times" onclick="closemenu()"></i>
             </ul>
-            <i class="fas fa-bars" onclick="openmenu()"></i>
+            <button class="menu-toggle" type="button" onclick="openmenu()" aria-label="Open navigation menu" aria-controls="sidemenu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
         </nav>
         <div class="header-text">
-            <p>
-                UI/UX Designer & Web Developer
-            </p>
-            <h1> Hi,I'm <span>Tharun</span><br> From Hyderabad</h1>
+            <p>Software Engineer | Python Backend Developer | AI/ML Enthusiast</p>
+            <h1>Hi, I'm <span>Mekala Tharun</span></h1>
+            <p class="hero-description">I build practical software and AI-powered solutions.</p>
+            <div class="hero-actions">
+                <a href="#portfolio" class="btn">View My Projects</a>
+                <a href="./Tharun_CV.pdf" download="Tharun_Resume.pdf" type="application/pdf" class="btn btn2">Download Resume</a>
+            </div>
         </div>
     </div>
 </div>
@@ -35,56 +41,53 @@
     <div class="container">
         <div class="row">
             <div class="about-col-1">
-                <img src="user.png"/>
+                <img src="WhatsApp Image 2026-08-25 at 8.34.45 PM.jpeg" alt="Mekala Tharun Kuruma">
             </div>
             <div class="about-col-2">
                 <h1 class="sub-title">About Me</h1>
-                <p>Hi, I'm Tharun — a passionate Computer Science student with a strong foundation in full-stack web development, Java, and SQL. I'm currently building innovative projects like GreenMind, an AI-powered platform to help farmers identify and solve crop issues.
+                <p>Computer Science Engineering student with hands-on experience in <strong>Python, backend development, REST APIs, databases, web development, and machine learning</strong>. I build practical software projects and am currently developing <strong>GreenMind</strong>, an AI-powered AgriTech final-year project for crop disease detection and intelligent recommendations.<br><br>
 
-I have a deep interest in solving real-world problems using technology, and I'm actively preparing for the GATE CS exam to strengthen my core knowledge in computer science.
-
-My goal is to create impactful software solutions, gain hands-on experience through internships, and eventually launch a tech startup in the AgriTech space. I'm constantly learning, building, and striving to grow as a developer and problem-solver.</p>
+With a strong foundation in <strong>Data Structures &amp; Algorithms, problem-solving, and software development</strong>, I enjoy turning real-world needs into reliable, thoughtful products.</p>
 <div class="tab-titles">
-    <p class="tab-links active-link " onclick="opentab('skills')">Skills</p>
-    <p class="tab-links" onclick="opentab('experience')">Experience</p>
-    <p class="tab-links" onclick="opentab('education')" >Education</p>
+    <p class="tab-links active-link" onclick="opentab(event, 'skills')">Skills</p>
+    <p class="tab-links" onclick="opentab(event, 'experience')">Experience</p>
+    <p class="tab-links" onclick="opentab(event, 'education')">Education</p>
+    <p class="tab-links" onclick="opentab(event, 'certifications')">Certifications &amp; Achievements</p>
 </div>
 <div class="tab-contents active-tab" id="skills">
-       <ul>
-  <li><span>JavaScript</span><br>Frontend and backend scripting for dynamic web apps</li>
-  <li><span>React.js</span><br>Building modern UI components and single-page applications</li>
-  <li><span>Node.js & Express</span><br>Server-side development and API handling</li>
-  <li><span>Java</span><br>Core programming, OOPs, collections, and multi-threading</li>
-  <li><span>SQL & DBMS</span><br>Database design, queries, normalization, indexing</li>
-  <li><span>HTML & CSS</span><br>Structuring and styling responsive web pages</li>
-  <li><span>Git & GitHub</span><br>Version control and collaborative project management</li>
-  <li><span>DSA</span><br>Problem-solving using data structures and algorithms</li>
-  <li><span>API Integration</span><br>Working with RESTful APIs, JSON data handling</li>
-  <li><span>Soft Skills</span><br>Teamwork, communication, leadership, and time management</li>
-</ul>
-
-
-
+    <div class="skill-tags" aria-label="Technical skills">
+        <span>Python</span><span>JavaScript</span><span>React.js</span><span>FastAPI</span>
+        <span>Django</span><span>Node.js</span><span>Express.js</span><span>SQL</span>
+        <span>PostgreSQL</span><span>MongoDB</span><span>Prisma</span><span>REST APIs</span>
+        <span>Machine Learning</span><span>DSA</span><span>Git</span><span>GitHub</span>
+    </div>
 </div>
 <div class="tab-contents" id="experience">
         <ul>
-  <li><span>Full-Stack Development</span><br>Built GreenMind, an AI-based web app for crop diagnosis using React, Node.js, and Express</li>
-  <li><span>UI/UX</span><br>Designed intuitive interfaces for web applications with responsive layouts and user-friendly flows</li>
-  <li><span>Web Development</span><br>Created multiple full-stack web apps with email/image handling, API integration, and database storage</li>
-  <li><span>Hackathon Leadership</span><br>Led a team in an AgriTech hackathon, developed and presented a smart farming web solution</li>
-  <li><span>Workshop Experience</span><br>Completed Fullstack Web Development workshop at IIT Hyderabad, built real-time project prototypes</li>
+    <li><span>Artificial Intelligence Intern — InternzLearn</span><br>2025<br>Gained hands-on exposure to Artificial Intelligence concepts, real-world applications, and AI-related project development activities.</li>
+    <li><span>ServiceNow Virtual Internship — ITSM &amp; Workflow Automation</span><br>Learned IT Service Management concepts, ServiceNow fundamentals, workflow automation, and enterprise workflows.</li>
 </ul>
 
 
 </div>
 <div class="tab-contents" id="education">
     <ul>
-  <li><span>B.Tech – Computer Science and Engineering</span><br>TKR College of Engineering and Technology, Hyderabad (2023 – 2027)<br>Currently in 3rd Year, 1st Semester | CGPA: 7.0<br>Studying Web Development, DBMS, Java, Data Analytics, and Software Engineering</li>
-  <li><span>Intermediate Education (Class XII)</span><br>Chaitanya Junior College, Ballapur (V)<br>Completed with strong foundation in Mathematics and Science</li>
-  <li><span>Certifications & Workshops</span><br>Completed Fullstack Web Development Workshop at IIT Hyderabad; gained hands-on project experience</li>
+    <li><span>B.Tech — Computer Science and Engineering</span><br>TKR College of Engineering and Technology, Hyderabad<br>2023–2027 | CGPA: 7.24/10</li>
+    <li><span>Intermediate — Class XII</span><br>Chaitanya Junior College, Balapur | Score: 84%</li>
+    <li><span>Secondary School — Class X</span><br>Lord's Talent High School | GPA: 10/10</li>
 
 
 
+    </ul>
+</div>
+<div class="tab-contents" id="certifications">
+    <ul>
+    <li><span>Certified Implementation Specialist — Data Foundations (CMDB and CSDM)</span><br>ServiceNow · June 2026</li>
+    <li><span>Data Analytics with Python</span><br>NPTEL</li>
+    <li><span>Certificate of Excellence — 1st Place, Webathon</span><br>TKR College of Engineering and Technology · March 2025</li>
+    <li><span>Full Stack Development Workshop</span><br>IIT Hyderabad · February 2025</li>
+    <li><span>Certificate of Participation — 36-Hour National-Level Hackathon</span><br>2026</li>
+    <li><span>Webathon Coordinator — Certificate of Presentation</span></li>
     </ul>
 </div>
             </div>
@@ -94,69 +97,92 @@ My goal is to create impactful software solutions, gain hands-on experience thro
 <!-----------------services-section---------------->
 <div id="services">
     <div class="container">
-        <h1 class="sub-title"> My Services</h1>
+        <h1 class="sub-title">Technical Focus</h1>
         <div class="services-list ">
             <div>
                 <i class="fa-solid fa-code"></i>
-  <h2>Web Design</h2>
-  <p>I specialize in creating modern, user-friendly, and responsive web designs that offer smooth navigation and an engaging user experience. From clean layouts to fully interactive UIs, I craft interfaces that not only look great but also align with your brand’s goals.</p>
-  <a href="#">Learn More</a>
+    <h2>Web Development</h2>
+    <p>Responsive interfaces with HTML, CSS, JavaScript, and React.js—built for clear, practical user experiences.</p>
 </div>
 
 <div>
     <i class="fa-brands fa-connectdevelop"></i>
-  <h2>Web Development</h2>
-  <p>I build fast, scalable, and secure web applications using modern technologies like React.js, Node.js, and Express. From frontend interactivity to backend API integration and database management, I deliver full-stack solutions that work seamlessly.</p>
-  <a href="#">Learn More</a>
+    <h2>Backend Development</h2>
+    <p>Backend applications and REST APIs using Python, FastAPI, Django, Node.js, and Express.js.</p>
 </div>
 
 <div>
     <i class="fa-brands fa-app-store-ios"></i>
-  <h2>App Development</h2>
-  <p>I develop responsive and user-friendly mobile applications for Android platforms using modern frameworks. Whether it's a prototype or a full-fledged app, I focus on performance, usability, and clean code structure for future scalability.</p>
-  <a href="#">Learn More</a>
+    <h2>AI & Machine Learning</h2>
+    <p>Machine-learning integration for practical products, including crop disease detection and recommendations.</p>
+</div>
+
+<div>
+        <i class="fa-solid fa-database"></i>
+    <h2>API & Database Development</h2>
+    <p>Structured application data with SQL, MongoDB, PostgreSQL, Prisma, and reliable API integrations.</p>
 </div>
 
         </div>
     </div>
 </div>
-<!----------------portfolio------------>
+<!----------------projects------------>
 <div id="portfolio">
-    <div id="container">
-        <h1 class="sub-title"> My Work</h1>
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
         <div class="work-list">
             <div class="work">
-                <img src="work-1.png">
+                <img src="greenmind.png" alt="GreenMind AgriTech platform preview">
                 <div class="layer">
-                    <h3>Social Media App</h3>
-                    <p>The app connects you to the talented people around the world. Download it from play store.</p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    
+                    <span class="project-status">Final Year Project · In Development</span>
+                    <h3>GreenMind — AI-Powered AgriTech Platform</h3>
+                    <p>An AI-powered AgriTech platform for crop disease detection and intelligent recommendations using machine learning and image analysis.</p>
+                    <div class="project-tags"><span>Machine Learning</span><span>Image Analysis</span><span>React</span><span>Node.js</span><span>APIs</span></div>
+                    <div class="project-links">
+                        <a href="https://github.com/melakatharun/GreenMind3" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    </div>
                 </div>
             </div>
             <div class="work">
-                <img src="work-2.png">
+                <img src="Job.png" alt="Job Board Platform preview">
                 <div class="layer">
-                    <h3>Music App</h3>
-                    <p>The app connects you to the talented people around the world. Download it from play store.</p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <h3>Job Board Platform</h3>
+                    <p>RESTful backend platform supporting candidate and employer workflows, job listings, applications, application tracking, and notifications.</p>
+                    <div class="project-tags"><span>Python</span><span>Django</span><span>DRF</span><span>JWT</span><span>SQLite</span><span>REST API</span></div>
+                    <div class="project-links">
+                        <a href="https://github.com/melakatharun/CodeAlpha_JobBoardPlatform" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        <a href="https://codealpha-jobboardplatform.onrender.com" target="_blank" rel="noopener noreferrer">Live Site</a>
+                    </div>
                     
                 </div>
 
             </div>
             <div class="work">
-                <img src="work-3.png">
+                <img src="Restaurant.png" alt="Restaurant Management System preview">
                 <div class="layer">
-                    <h3>Online Shopping App</h3>
-                    <p>The app connects you to the talented people around the world. Download it from play store.</p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    
+                    <h3>Restaurant Management System Backend</h3>
+                    <p>RESTful backend API for menus, tables, reservations, orders, inventory, authentication, and reports.</p>
+                    <div class="project-tags"><span>Node.js</span><span>Express.js</span><span>PostgreSQL</span><span>Prisma</span><span>JWT</span><span>Zod</span></div>
+                    <div class="project-links">
+                        <a href="https://github.com/melakatharun/CodeAlpha_RestaurantManagementSystem" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        <a href="https://restaurant-management-api-oqu6.onrender.com/" target="_blank" rel="noopener noreferrer">Live Site</a>
+                    </div>
+                </div>
+            </div>
+            <div class="work">
+                <img src="URL.png" alt="URL Shortener preview">
+                <div class="layer">
+                    <h3>URL Shortener</h3>
+                    <p>Backend application for converting long URLs into short, shareable links with efficient URL processing and link management.</p>
+                    <div class="project-tags"><span>Backend</span><span>REST API</span><span>URL Processing</span></div>
+                    <div class="project-links">
+                        <a href="https://github.com/melakatharun/CodeAlpha_URLShortener" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        <a href="https://codealpha-urlshortener-c39e.onrender.com/" target="_blank" rel="noopener noreferrer">Live Site</a>
+                    </div>
                 </div>
             </div>
             
         </div>
-        <a href="#" class="btn">See more</a>
- 
     </div>
 
 </div>
@@ -166,30 +192,27 @@ My goal is to create impactful software solutions, gain hands-on experience thro
         <div class="row">
             <div class="contact-left">
                 <h1 class="sub-title">Contact Me</h1>
-                <p><i class="fa-solid fa-paper-plane"></i> mekalatharun543@gmail.com</p>
-                <p><i class="fa-solid fa-phone"></i> 9177898761</p>
+                <p><i class="fa-solid fa-paper-plane"></i> <a href="mailto:mekalatharun543@gmail.com">mekalatharun543@gmail.com</a></p>
                 <div class="social-icons">
-                    <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="https://fa-twitter-square.com/"><i class="fa-brands fa-twitter-square"></i></a>
-                    <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/melakatharun" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/tharun-mekala-416271290" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
                 </div>
-                <a href="Mekala_Tharun_CV.pdf" download class="btn btn2">Download CV</a>
+                <a href="Tharun_CV.pdf" download="Tharun_CV.pdf" class="btn btn2">Download CV</a>
             </div>
             <div class="contact-right">
-                <form name="submit-to-google-sheet">
+                <form name="contact" action="https://formspree.io/f/xoeqnbzg" method="POST" novalidate>
                     <input type="text" name="Name" placeholder="Your Name" required>
                     <input type="email" name="Email" placeholder="Your Email" required>
-                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
                     <button type="submit" class="btn btn2">Submit</button>
                 </form>
-                <span id="msg"></span>
+                <span id="msg" role="status" aria-live="polite"></span>
             </div>
             
         </div>
     </div>
     <div class="copyright">
-        <p>© 2025 Tharun. All rights reserved <i class="fa-solid fa-heart"></i></p>
+        <p>&copy; 2026 Mekala Tharun Kuruma. All rights reserved <i class="fa-solid fa-heart"></i></p>
     </div>
 </div>
 
@@ -197,7 +220,7 @@ My goal is to create impactful software solutions, gain hands-on experience thro
 <script>
     var tablinks=document.getElementsByClassName("tab-links");
     var tabcontents=document.getElementsByClassName("tab-contents");
-    function opentab(tabname){
+    function opentab(event, tabname){
         for(tablink of tablinks){
             tablink.classList.remove("active-link");
         }
@@ -211,30 +234,52 @@ My goal is to create impactful software solutions, gain hands-on experience thro
 <script>
     var sidemenu =document.getElementById("sidemenu");
     function openmenu(){
-        sidemenu.style.right="0";
+        sidemenu.classList.add('menu-open');
+        document.querySelector('.menu-toggle').setAttribute('aria-expanded', 'true');
     }
     function closemenu(){
-        sidemenu.style.right="-200px";
+        sidemenu.classList.remove('menu-open');
+        document.querySelector('.menu-toggle').setAttribute('aria-expanded', 'false');
     }
 </script>
 <script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbzKwSU5LbKtewW1s0BZIPNi3rc3W6jSOo_kqz340W8OPItkGat1IHUZQ1YJOjds1c2yLQ/exec'
-  const form = document.forms['submit-to-google-sheet']
-  const msg = document.getElementById("msg")
+  const form = document.forms.contact;
+  const msg = document.getElementById("msg");
+  const submitButton = form.querySelector('button[type="submit"]');
 
-  form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response =>{
-        msg.innerHTML = "Message sent successfully!";
-        setTimeout(function(){
-            msg.innerHTML=""
-            
-        },5000)
-        form.reset();
-      })
-      .catch(error => console.error('Error!', error.message))
-  })
+  form.addEventListener('submit', async (event) => {
+    event.preventDefault();
+
+    if (!form.checkValidity()) {
+      form.reportValidity();
+      return;
+    }
+
+    submitButton.disabled = true;
+    submitButton.textContent = 'Sending...';
+    msg.textContent = 'Sending your message...';
+    msg.className = '';
+
+    try {
+      const response = await fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { Accept: 'application/json' }
+      });
+
+      if (!response.ok) throw new Error('Submission failed');
+
+      form.reset();
+      msg.textContent = 'Thanks! Your message has been sent successfully.';
+      msg.className = 'form-success';
+    } catch (error) {
+      msg.textContent = 'Sorry, your message could not be sent. Please try again later.';
+      msg.className = 'form-error';
+    } finally {
+      submitButton.disabled = false;
+      submitButton.textContent = 'Submit';
+    }
+  });
 </script>
     
 </body>
