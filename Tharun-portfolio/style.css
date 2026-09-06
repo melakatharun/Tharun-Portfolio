@@ -113,8 +113,9 @@ form .btn2 { border: 0; cursor: pointer; margin-top: 22px; }
     .menu-toggle { align-items: center; background: transparent; border: 0; cursor: pointer; display: flex; flex-direction: column; gap: 5px; padding: 10px; position: relative; z-index: 4; }
     .menu-toggle span { background: var(--lime); display: block; height: 2px; width: 24px; }
     .header-text { padding-top: 70px; width: 100%; }
+    .hero-description, .hero-actions { position: relative; z-index: 3; }
     .header-text h1 { font-size: clamp(54px, 16vw, 82px); }
-    .hero-portrait { height: 370px; opacity: .5; right: -60px; width: 430px; }
+    .hero-portrait { bottom: -24px; height: 300px; opacity: .42; right: -60px; width: 430px; }
     .hero-note { bottom: 28px; right: 70px; }
     section, #about, #services, #portfolio, #contact { padding: 78px 0; }
     .row { flex-direction: column; gap: 34px; }
