@@ -120,7 +120,7 @@ form .btn2 { border: 0; cursor: pointer; margin-top: 22px; }
     section, #about, #services, #portfolio, #contact { padding: 78px 0; }
     .row { flex-direction: column; gap: 34px; }
     .about-col-1 { flex-basis: auto; }
-    .about-col-1 img { height: 300px; }
+    .about-col-1 img { height: auto; max-height: none; object-fit: contain; }
     .services-list, .work-list { grid-template-columns: 1fr; }
     .services-list div { min-height: 0; }
     .tab-titles { gap: 16px; }
