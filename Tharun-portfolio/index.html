@@ -17,7 +17,7 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Skills</a></li>
                 <li><a href="#portfolio">Projects</a></li>
-                <li><a href="#about">Experience</a></li>
+                <li><a href="#experience">Experience</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <i class="fas fa-times" onclick="closemenu()"></i>
             </ul>
@@ -249,6 +249,11 @@ With a strong foundation in <strong>Data Structures &amp; Algorithms, problem-so
         sidemenu.classList.remove('menu-open');
         document.querySelector('.menu-toggle').setAttribute('aria-expanded', 'false');
     }
+</script>
+<script>
+    document.querySelector('nav a[href="#experience"]').addEventListener('click', function () {
+        document.querySelector('.tab-links[onclick*="experience"]').click();
+    });
 </script>
 <script>
   const form = document.forms.contact;
